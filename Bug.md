@@ -24,9 +24,19 @@ for(var i = 168; i < 170; i++){
   Map.addLayer(image, {min:0, max:0.3, bands:["B4", "B3", "B2"]},image.getString('system:index'),false)
 }
 ```
-But there exists a Bug in Method2
+- But there exists a Bug in Method2
 ``` JavaScript
 image.getString('system:index') is Wrong,because it is a ee.String object
 The layer name must be a String
 ```
-- Debug:
+- Debug2-1:
+``` JavaScript
+/*
+Map.addLayer(image, {min:0, max:0.3, bands:["B4", "B3", "B2"]},image.getString('system:index'),false)
+*/
+Map.addLayer(image, {min:0, max:0.3, bands:["B4", "B3", "B2"]},image.getString('system:index').getInfo(),false)  
+//getInfo() waste time,thus should be changed into another method
+```
+- Debug2-2:\
+idea: how to get the value of ee.String. or how to convert ee.String to String.\
+
