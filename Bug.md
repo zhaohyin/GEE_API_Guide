@@ -39,4 +39,8 @@ Map.addLayer(image, {min:0, max:0.3, bands:["B4", "B3", "B2"]},image.getString('
 ```
 - Debug2-2:\
 idea: how to get the value of ee.String. or how to convert ee.String to String.\
+result:It's too difficult, i need to ask for help tomorrow.
+``` JavaScript
+ee.Image(listOfImages.get(i)).get('system:index')  // also obtain a ee.String 
+```
 
