@@ -1,6 +1,7 @@
 # VsCode_Setting_Bug & DeBug
 
-1. Soundfile can not read *.FLAC file in MacOS.....
+1. Soundfile can not read *.FLAC file in MacOS..... 
+参考链接：[https://github.com/bastibe/python-soundfile/issues/237]
 ``` Python
 Traceback (most recent call last):
   File "create_librispeech_metadata.py", line 126, in <module>
