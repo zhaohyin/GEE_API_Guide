@@ -1,6 +1,10 @@
 # VsCode_Setting_Bug & DeBug
 
-1. Soundfile can not read *.FLAC file in MacOS..... 
+## 1. Soundfile can not read *.FLAC file in MacOS..... 
+
+- [ ] completed
+<center><button> edit by zhyin,Dec29 </button></center>
+
 参考链接：[https://github.com/bastibe/python-soundfile/issues/237]
 ``` Python
 Traceback (most recent call last):
@@ -56,6 +60,7 @@ Error: In Windows, FLAC is contained in the output resule....
                       UID:GID : 501:20
                    netrc file : None
                  offline mode : False
+
 
 ```python
 
