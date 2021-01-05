@@ -57,3 +57,36 @@ git stash pop
 git reset --hard
 git pull
 ```
+
+---
+    fatal: refusing to merge unrelated histories
+    问题出现时间情景：
+    1）本地创建仓库，本地存在git且已commit并未提交；
+    2）Github上新建仓库，存在git-history；
+    3）从Github上面 git pull时存在该问题
+
+- [x] Solution:在你操作命令后面加--allow-unrelated-histories\
+  
+    eg:git merge master --allow-unrelated-histories
+---
+``` zsh
+    (base) Star@zhyin Les-Trois-Mousquetaires % git push origin main
+        > error: src refspec main does not match any
+        > error: failed to push some refs to 'https://github.com/zhaohyin/Les-Trois-Mousquetaires.git'
+    (base) Star@zhyin Les-Trois-Mousquetaires % git remote add origin https://github.com/zhaohyin/Les-Trois-Mousquetaires.git
+        > fatal: remote origin already exists.
+    (base) Star@zhyin Les-Trois-Mousquetaires % git push -u origin main  
+        > error: src refspec main does not match any
+        > error: failed to push some refs to 'https://github.com/zhaohyin/Les-Trois-Mousquetaires.git'
+    (base) Star@zhyin Les-Trois-Mousquetaires % git push origin main
+        > error: src refspec main does not match any
+        > error: failed to push some refs to 'https://github.com/zhaohyin/Les-Trois-Mousquetaires.git'
+```
+- [x] Solution:
+```zsh
+# 添加远程链接为github网络
+(base) Star@zhyin Les-Trois-Mousquetaires % git remote add origin https://github.com/zhaohyin/Les-Trois-Mousquetaires.git
+# 新建分支为 master
+(base) Star@zhyin Les-Trois-Mousquetaires % git push --set-upstream origin master 
+# 温馨提示：最好新建的时候不要用main，而是用master，不然就会很尴尬...[经验之谈]
+```
