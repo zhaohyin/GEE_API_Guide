@@ -4,6 +4,8 @@ Edit by zhyin in Jan 5,2021
 Main content: 1) Git basic operation; 2) Git Bug && DeBug
 ![image](https://upload-images.jianshu.io/upload_images/4991519-8aa5cd170adb37f2.png?imageMogr2/auto-orient/strip|imageView2/2/w/900/format/webp)
 
+
+
 ## 0. Connect local repositories and Github repositories
     error: ssh keys have been used by other people.
 
@@ -28,6 +30,8 @@ Solution:
     Sign in Github.com 
     Paste in  settings -> SSH and GPG keys -> New SSH key
 
+
+
 ## 1. Local --> Github.com
 ``` zsh
 (base) Star@zhyin ~ % cd xxx/xxx/Programming_Notes/
@@ -39,6 +43,9 @@ Solution:
 ```zsh
 (base) Star@zhyin Programming_Notes % git push
 ```
+
+
+
 ## 2. Github.com --> Local
     git pull
 ## 3. Git Bug and Debug
@@ -58,6 +65,10 @@ git reset --hard
 git pull
 ```
 
+
+
+<center><button>Tue Jan5</button></center> 
+
 ---
     fatal: refusing to merge unrelated histories
     问题出现时间情景：
@@ -69,6 +80,7 @@ git pull
   
     eg:git merge master --allow-unrelated-histories
 ---
+
 ``` zsh
     (base) Star@zhyin Les-Trois-Mousquetaires % git push origin main
         > error: src refspec main does not match any
@@ -81,7 +93,9 @@ git pull
     (base) Star@zhyin Les-Trois-Mousquetaires % git push origin main
         > error: src refspec main does not match any
         > error: failed to push some refs to 'https://github.com/zhaohyin/Les-Trois-Mousquetaires.git'
+BUG 出现情景：本地连接远程服务器，并push代码至远程服务器
 ```
+
 - [x] Solution:
 ```zsh
 # 添加远程链接为github网络
