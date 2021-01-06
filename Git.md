@@ -1,5 +1,18 @@
 # Git Notes
+
 Edit by zhyin in Jan 5,2021
+
+<!-- TOC -->
+
+- [Git Notes](#git-notes)
+  - [0. Connect local repositories and Github repositories](#0-connect-local-repositories-and-github-repositories)
+  - [1. Local --> Github.com](#1-local----githubcom)
+  - [2. Github.com --> Local](#2-githubcom----local)
+  - [3. Git Bug and Debug](#3-git-bug-and-debug)
+    - [3.1 Commit your changes or stash them before you can merge.](#31-commit-your-changes-or-stash-them-before-you-can-merge)
+    - [3.2 fatal: refusing to merge unrelated histories](#32-fatal-refusing-to-merge-unrelated-histories)
+
+<!-- /TOC -->
 
 Main content: 1) Git basic operation; 2) Git Bug && DeBug
 ![image](https://upload-images.jianshu.io/upload_images/4991519-8aa5cd170adb37f2.png?imageMogr2/auto-orient/strip|imageView2/2/w/900/format/webp)
@@ -66,8 +79,10 @@ git pull
 ```
 
 
-
 <center><button>Tue Jan5</button></center> 
+
+
+### 3.2 fatal: refusing to merge unrelated histories
 
 ---
     fatal: refusing to merge unrelated histories
