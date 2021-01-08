@@ -1,4 +1,6 @@
-# GEE_Java：Bug && Debug
+<p align=right><img src="https://code.earthengine.google.com/images/GoogleEarthEngine_v1.png" width = '200px' /> </p>
+
+# GEE_Java
 List the Bug and Debug ideas encountered in the process of learning GEE
 
 ## 1.Display all images in the collection
