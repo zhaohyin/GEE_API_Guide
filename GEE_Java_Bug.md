@@ -1,6 +1,6 @@
 <p align=right><img src="https://code.earthengine.google.com/images/GoogleEarthEngine_v1.png" width = '200px' /> </p>
 
-# GEE_Java
+# GEE_Java_Bug
 List the Bug and Debug ideas encountered in the process of learning GEE
 
 
@@ -136,9 +136,6 @@ Map.centerObject(soybean_000, 13);
 > Debug 2-3: 知乎大神的方法 \
 > https://www.zhihu.com/search?type=content&q=GEE%20evaluate   
 
-<details>
-    <summary> <font size=4 color=blue* >实例-代码块</font> </summary>
-
 ```javascript
 var rawLayer = null;
 var computedIds = cloudness_img_tsc.reduceColumns(ee.Reducer.toList(), ['system:index'])
@@ -191,18 +188,12 @@ function showSelectRawImage(key) {
 
 Map.centerObject(soybean_000, 13);
 ```
-</details>
-
-
 
 
 思考4: ***改进：添加搜索框***\
 大致思路：通过ID来确定时间，从而在该时间前后进行搜索！！
 ***<font size=5 color=blue>OHHHHHHHHHHHHHHHH!!!!,Succeed!!!!</font>***
 
-<details>
-    <summary> <font size=4 color=blue* >实例-代码块</font> </summary>
-  
 ```javaScript
 var rawLayer = null;
 var computedIds = cloudness_img_tsc.reduceColumns(ee.Reducer.toList(), ['system:index'])
@@ -264,11 +255,6 @@ function showSelectRawImage(key) {
 Map.centerObject(soybean_000, 13);
 //
 ```
-</details>
-
-
-
-
 
 
 
