@@ -191,7 +191,7 @@ Map.centerObject(soybean_000, 13);
 
 
 思考4: ***改进：添加搜索框***\
-大致思路：通过ID来确定时间，从而在该时间前后进行搜索！！
+大致思路：通过ID来确定时间，从而在该时间前后进行搜索！！\
 ***<font size=5 color=blue>OHHHHHHHHHHHHHHHH!!!!,Succeed!!!!</font>***
 
 ```javaScript
@@ -255,8 +255,6 @@ function showSelectRawImage(key) {
 Map.centerObject(soybean_000, 13);
 //
 ```
-
-
 
 
 
