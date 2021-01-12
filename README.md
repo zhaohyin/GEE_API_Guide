@@ -1,18 +1,36 @@
 # Programming Notes
 Records related to GEE_JAVA,GEE_Python, Vscode, Markdown
-## GEE_UsageJava_Bug.md
+## GEE_Java_Bug.md
   * Description:BUG and DEBUG ideas generated in the process of using GEE-java   
  
  - [x] Display all images in the collection of raw image
- - [ ] Display all images in the collection of cloudness image
+ - [x] Display all images in the collection of cloudness image
+
+## GEE_Python.md
+  * [x] Connect to GEE 
+  * [x] Extension App
+
+
+## Git.md
+- [x] Common Git command
+
+## Image_Texture_Analysis.md
+- [x] Description of Texture 
+- [x] LBP Texture
+
+## Linux_Operation
+- [x] Common Linux Command
+- [x] Server Connection
 
 ## VsCode_Python_Usage.md
   * Description:The Environment Set Up of Python in Vscode
+  * Extension：Theme、GitHub and so on...
+
 
 ## VcCode_Setting_Bug.md
   * Description:BUG and DEBUG ideas in the Process of using python in asrEnv.
   
-  - [ ] SoundFiles can not support 'FLAC'
+  - [ ] SoundFiles can not support 'FLAC'   <font color=red>***404***</font>
 
 ---
 <center>
